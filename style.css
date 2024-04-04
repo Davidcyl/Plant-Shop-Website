@@ -1,0 +1,224 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.shopname {
+    color: #b6b4b4;
+}
+
+
+.banner {
+    position: relative;
+    text-align: center;
+    width: 100%; /* Set the width of the banner container */
+    height: 300px; /* Set the height of the banner container */
+    overflow: hidden; /* Ensure images don't overflow the container */
+}
+
+.banner img {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.welcome-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #33b79c; /* Dark grey */
+    letter-spacing: 1px;
+}
+
+.garden-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #33b79c; /* Dark grey */
+    letter-spacing: 1px;
+}
+
+.products-heading {
+    font-size: 33px;
+    font-weight: bold;
+    color: #3ba993; /* Dark grey */
+    letter-spacing: 1px;
+}
+
+
+
+/* Products Section */
+.products {
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px; /* Ensures space between items */
+}
+
+.product {
+    flex: 1; /* Grow to fill the space */
+    min-width: calc(25% - 20px); /* Subtract gap size */
+    max-width: calc(25% - 20px); /* Limit to 4 items per row */
+    text-align: center;
+}
+
+.product img {
+    width: 100%; /* Make image responsive */
+    max-width: 250px; /* Maximum size of image */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product {
+    position: relative; /* Needed for absolute positioning of the images */
+    /* Keep your existing styles */
+}
+
+.product-img {
+    width: 100%; /* Adjust as needed */
+    max-width: 250px; /* Maximum size of image */
+    height: auto;
+    margin-bottom: 10px;
+    display: block; /* Removes bottom margin/whitespace */
+    transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hidden */
+}
+
+.product:hover .hover-img {
+    opacity: 1; /* Show on hover */
+}
+
+/* Pagination */
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+/* Button styling */
+
+.home-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white; /* White text */
+    color: black; /* Black text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.home-button:hover {
+    background-color: #2fbea7; /* Darker blue on hover */
+}
+
+.about-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white; /* White text */
+    color: black; /* Black text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.about-button:hover {
+    background-color: #2fbea7; /* Darker blue on hover */
+}
+
+.services-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white; /* White text */
+    color: black; /* Black text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.services-button:hover {
+    background-color: #2fbea7; /* Darker blue on hover */
+}
+
+.contact-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white; /* White text */
+    color: black; /* Black text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.contact-button:hover {
+    background-color: #2fbea7; /* Darker blue on hover */
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 20px; /* Adjust the distance from the right side */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    background-color: #25D366; /* WhatsApp green color */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
